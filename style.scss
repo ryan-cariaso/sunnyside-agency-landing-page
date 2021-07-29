@@ -1,0 +1,58 @@
+$font1: 'Barlow', sans-serif;
+$font2: 'Fraunces', serif;
+$primary-color1: hsl(7, 99%, 70%);
+$primary-color2: hsl(51, 100%, 49%);
+$primary-color3: hsl(167, 40%, 24%);
+$primary-color4: hsl(198, 62%, 26%);
+$primary-color5: hsl(168, 34%, 41%);
+$neutral-color1: hsl(212, 27%, 19%);
+$neutral-color2: hsl(213, 9%, 39%);
+$neutral-color3: hsl(232, 10%, 55%);
+$neutral-color4: hsl(210, 4%, 67%);
+$neutral-color5: hsl(0, 0%, 100%);
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font1;
+  color: $neutral-color4;
+  font-size: 1.125rem;
+}
+
+a{
+  text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: $font2;
+  color: $neutral-color1;
+}
+
+header {
+  padding: 32px 24px 130px;
+  background: center/cover no-repeat url(images/mobile/image-header.jpg);
+}
+
+.menu-wrap{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.main-menu{
+  width: 100%;
+  left: 0;
+  position: absolute;
+  top: 75px;
+  padding: 40px 20px;
+  background-color: $neutral-color5;
+  transition: all 0.5s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+}
